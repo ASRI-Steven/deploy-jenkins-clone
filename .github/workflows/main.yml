@@ -11,5 +11,5 @@ jobs:
       with:
             host: 10.10.0.72
             username: appsadmin
-            password: 135790AaA
+            password: 135790AaAs
             script: echo hello world > hello.txt
