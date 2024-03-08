@@ -13,7 +13,7 @@ jobs:
         with:
           host: 10.10.0.72
           username: appsadmin
-          password: 135790AaA
+          passphrase: 135790AaA
           port: 22
           script: |
             echo 'hello world' > nama_file.txt
