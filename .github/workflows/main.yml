@@ -1,0 +1,20 @@
+name: remote ssh command
+on: [push]
+
+jobs:
+  ssh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: SSH to remote server and create file
+        uses: appleboy/ssh-action@master
+        with:
+          host: 10.10.0.72
+          username: appsadmin
+          password: 135790AaA
+          port: 22
+          timeout: 2m
+          script: |
+            echo 'hello world' > nama_file.txt
