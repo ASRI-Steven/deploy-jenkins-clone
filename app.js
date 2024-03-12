@@ -19,7 +19,7 @@ app.get('/haha', (req, res) => {
 })
 
 app.get('/hehe', (req, res) => {
-  res.send("heh")
+  res.send("he")
 })
 
 app.listen(port, () => {
