@@ -14,6 +14,10 @@ app.get('/world', (req, res) => {
   res.send(process.env.WORLD || 'World')
 })
 
+app.get('haha', (req, res) => {
+  res.send("haha")
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
