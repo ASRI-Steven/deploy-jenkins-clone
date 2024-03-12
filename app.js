@@ -7,7 +7,7 @@ const port = 3000
 app.use(cors())
 
 app.get('/hello', (req, res) => {
-  res.send(process.env.HELLO || 's')
+  res.send(process.env.HELLO || 'ss')
 })
 
 app.get('/world', (req, res) => {
