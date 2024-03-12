@@ -14,7 +14,7 @@ app.get('/world', (req, res) => {
   res.send(process.env.WORLD || 'World')
 })
 
-app.get('haha', (req, res) => {
+app.get('/haha', (req, res) => {
   res.send("haha")
 })
 
